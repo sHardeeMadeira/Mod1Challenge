@@ -38,12 +38,21 @@ public class Main {
         System.out.print("Enter your fav genre of music: ");
         yourstring = music.nextLine();
 
-        {
-            if (mystring == yourstring)
+        { // these curly braces aren't necessary ... did you mean to have an if here?
+            
+                /*
+                So sort of an important note here...
+                These two if statements wont actually run b/c you forgot
+                your curly braces...So no the user actually has to enter two
+                strings, one will receive the response: Same and the 
+                next will say Lame...if that confuses you, see me.
+
+            */
+            if (mystring == yourstring) 
                 mystring = music.nextLine();
                 System.out.printf("Same! ");
 
-
+        
             if (mystring != yourstring)
                 yourstring = music.nextLine();
                 System.out.printf("Lame. ");
@@ -59,7 +68,7 @@ public class Main {
 
         System.out.println("Enter a number between 0 and 17: ");
 
-        do {
+        do { // o u fancy with a dowhile huh?
             System.out.println("Enter your guess: ");
             yourguess = guess.nextInt();
             if (yourguess == rnumber) {
@@ -91,6 +100,12 @@ public class Main {
 
         {
             int rows=3;
+            /*
+                Close...the goal here was
+                ****
+                **
+                *
+            */
             for (int i= rows-1; i>=0 ; i--)
             {
                 for (int j=0; j<=i; j++)
